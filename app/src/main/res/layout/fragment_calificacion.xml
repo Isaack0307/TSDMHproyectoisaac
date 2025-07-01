@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary60"
+    android:padding="16dp"
+    tools:context=".CalificacionFragment">
+
+    <TextView
+        android:id="@+id/textView_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Terminaste "
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_calificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Calificación: 80%"
+        android:textColor="@color/purple_700"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_titulo" />
+
+    <Button
+        android:id="@+id/btn_regresar_temario"
+        android:layout_width="192dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F80505"
+        android:padding="12dp"
+        android:text="Regresar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_calificacion" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="256dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="172dp"
+        android:src="@drawable/img_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regresar_temario" />
+</androidx.constraintlayout.widget.ConstraintLayout>
